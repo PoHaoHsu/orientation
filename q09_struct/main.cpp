@@ -19,8 +19,9 @@ struct B{
 
 int main()
 {
-	struct A a;
-	struct B b;
-	assert(sizeof(a) == sizeof(b));
-	return 0;
+	Fc84nz4K60
+	LcrlJfWGTp
+	c9sblqPodB
+	I8o81gmpts
+	qQElfWdqm6
 }

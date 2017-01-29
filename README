@@ -1,13 +1,9 @@
 
 [Introduction]
 
-You should do this part AFTER you finish fixing all the bugs.
-Use "git rebase" to squash all commits whose message starts with "make some conflicts in ..." into a single commit and re-write its message to "make a lot of conflicts before merging master branch into this branch"
-
-Then, use "git merge" to merge "master" branch into this "git_practice" branch. You may encounter some conflicts in several files.
-After you fix the conflicts, commit it and leave the message unchanged as default.
-
-Finally, you can run the "submit.sh" script to examine your work
+Someone messed up the source code in the repository.
+Use "git reset" to discard any commits whose message begins with "mess up ...".
+You should NOT create any commit in this phase.
 
 
 [Contact]
