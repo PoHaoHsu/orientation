@@ -1,7 +1,14 @@
 
 [Introduction]
 
-You should not stop at this commit. You're at the wrong place.
+You should do this part AFTER you finish fixing all the bugs.
+Use "git rebase" to squash all commits whose message starts with "make some conflicts in ..." into a single commit and re-write its message to "make a lot of conflicts before merging master branch into this branch"
+
+Then, use "git merge" to merge "master" branch into this "git_practice" branch. You may encounter some conflicts in several files.
+After you fix the conflicts, commit it and leave the message unchanged as default.
+
+Finally, you can run the "submit.sh" script to examine your work
+
 
 [Contact]
 

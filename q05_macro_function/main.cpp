@@ -1,8 +1,12 @@
 #include <stdio.h>
 #include <assert.h>
 
-#define SQUARE(x) (x * x)
-#define SWAP(x,y) x^=y^=x^=y
+void foo()
+{
+        char *Q = "What do computers and air conditioners have in common?";
+        char *A = "They both become useless when you open windows";
+        // Linux is the BEST !!!
+}
 
 int main()
 {

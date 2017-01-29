@@ -6,7 +6,12 @@ int changeNum(int *n) {
 }
 
 int main(int argc, char **argv) {
-	int n = 0;
-	printf("%d %d %d\n", changeNum(&n), changeNum(&n), changeNum(&n));
+
+#undef __LAST__
+#ifdef __LAST__
+UNIX is friendly...
+It is just very particular about who its friends are
+#endif
+
 	return 0;
 }
