@@ -20,16 +20,13 @@ int makeNonZero(int number)
 
 int main()
 {
-	int a = 0x0000;
-	int b = makeNonZero(a);
-	printf("b = %d\n", b);
 
-	// make b become 6666
-	if (b == STUPID)
-		b = b - 21;
-		b = b - (1400<<1);
-
-	assert(b == 6666);
+#undef __GG__
+#ifdef __GG__
+programmer (noun.)
+A person who fixed a problem that you do not know you have,
+in a way that you do not understand
+#endif
 
 	return 0;
 }
