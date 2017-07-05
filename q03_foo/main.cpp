@@ -12,7 +12,7 @@ int makeNonZero(int number)
 			result = number;
 		case -1:
 			result = -number;
-		defualt:
+		default:
 			result = STUPID;
 	}
 	return result;
@@ -25,10 +25,11 @@ int main()
 	printf("b = %d\n", b);
 
 	// make b become 6666
-	if (b == STUPID)
+	if (b == STUPID){
 		b = b - 21;
 		b = b - (1400<<1);
-
+	}
+	printf("b = %d\n", b);
 	assert(b == 6666);
 
 	return 0;
