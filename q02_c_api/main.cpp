@@ -33,7 +33,7 @@ void printWholeFile(char const *filename)
 int main()
 {
 
-	char *someText = "Can you can a can as a canner ?";
+	char someText[] = "Can you can a can as a canner ?";
 
 	splitBySpace(someText);
 
@@ -45,6 +45,7 @@ int main()
 	char filename[21];
 	printf("input the source code file name: ");
 	fgets(filename, 20, stdin);
+	filename[strlen(filename)-1] = 0;
 	assert(strncmp(filename, "main.cpp", 8) == 0);
 	printWholeFile(filename);
 
