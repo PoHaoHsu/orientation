@@ -1,10 +1,54 @@
 
 [Introduction]
 
-There should have been some source files in the git repository, but I accidentally delete them.
-Trace the git log and recover them with whatever method you like except for the "git reset" with "-hard" flag.
-After recovering the missing files, add a new commit with the message "Start challenge"
-Make sure the message is exactly the same. Use copy-and-paste is recommended.
+There are some source codes with annoying bugs, please fix them and write a simple Makefile for each of them.
+
+
+[Rules]
+
+* Do not modify any asert() functions. They are used to confirm your work.
+* Makefile should have a target called "all" which produces an a.out executable.
+* Makefile should have a target called "clean" which remove any file produced by compiler.
+* Makefiles should be separately placed in every subdirectory and named as "Makefile".
+* Do not use print-liked functions for debugging. You should practice your debugger skills!
+* Do not use any OPTIMIZATION flag (ex: -O2) when compiling.
+
+
+[Description]
+
+* q1_2d_array: 	Dynamically allocate memory space for a 2D array and remember to free the space before program terminates.
+				Both malloc/free and new/delete implementations are acceptable.
+* q2_c_api: 	Read documents carefully before using functions in libraries.
+* q3_foo:		Try to make variable "b" equal to 6666. Do not modify any mathematical calculation of b.
+* q4_factorization:		Perform integer factorization (ex: 12 = 1,2,3,4,6,12).
+* q5_macro_function:	Never use macro functions to merely show of your skills!
+* q6_numbers:	Be careful with numbers.
+* q7_pointer:	Nice to meet you, segmentaion faults.
+* q8_static_global:			Understand the difference between a static global variable and a global variable.
+							Keyword "exern" may help.
+* q9_struct:				Struct memory layout.
+* q10_undefine_behavior:	Make sure the program do what you want.
+* q11_dynamic_libray_1:		Link to 2 version of libraries and record the result of variable "x" and "y".
+							You only need to compile main.cpp. The libraries have already been compiled.
+							Set LD_LIBRARY_PATH when executing a.out to specify where to search for the library.
+* q12_dynamic_libray_2:		Write a dynamic library implementing squareThenPlus() function.
+							Read the header file elsa.h for function details.
+
+* Reference for dynamic library: https://kaineshu.wordpress.com/2007/05/02/%E8%BD%89%E8%B2%BC%E7%94%A8gcc-%E8%87%AA%E8%A3%BD-library/
+
+
+[Report]
+
+List all bugs of each question in "report.txt" and put it in the same directory as README.
+Write down the cause of bugs and your solutions in English or Chinese.
+
+
+[Commit]
+
+You can make as many commits as you want when fixing the bugs.
+After you finish, use "git rebase" to squah all commits after "Start challenge" into a single commit with message "Finish challenge"
+
+Then, go to "git_practice" branch to continue the following challenges
 
 
 [Contact]
