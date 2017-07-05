@@ -5,11 +5,15 @@ int main()
 {
 	const int row = 4;
 	const int col = 3;
-
-	char **board = new char [row][col];
+	
+	// allocate memory
+	char **board = new char *[row];
+	for (int i = 0; i < row; i++){
+		board[i] = new char [col];
+	}
 
 	// initial values in array
-	for (int i =0; i < row; i++){
+	for (int i = 0; i < row; i++){
 		for (int j =0; j < col; j++){
 			board[i][j] = i*row+j;
 		}
@@ -26,6 +30,9 @@ int main()
 	}
 
 	// Remember to free memory allocation!!
-
+	for (int i = 0; i < row ; i++){
+		delete[] board[i];
+	}
+	delete[] board;
 	return 0;
 }
