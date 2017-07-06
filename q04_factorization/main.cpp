@@ -12,9 +12,9 @@ int main(int argc, char* argv[]){
 	int n = atoi(argv[1]);
 
 	//set variable
-	int i, j;
-	int num_of_factor = n / 2;
-
+	int i = 1, j = 0;
+	int num_of_factor = n / 2 + 1;
+	
 	//dynamically allocate an array
 	int *result_arr;
 	result_arr = (int *)malloc(num_of_factor);
@@ -25,9 +25,15 @@ int main(int argc, char* argv[]){
 			//put the factor pair in the array
 			//for example : 12 = 2 x 6
 			//(2, 6) is the factor pair of 12
-			result_arr[++j] = i;
-			result_arr[++j] = n / ++i;
+			//printf("i = %d\n", i);
+			//printf("j = %d\n", j);
+			result_arr[j++] = i;
+			//printf("j = %d\n", j);
+			if(i*i != n)
+				result_arr[j++] = n / i;
 		}
+		i++;
+		//printf("i = %d\n", i);
 	}
 
 	//ascending sort

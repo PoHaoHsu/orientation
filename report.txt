@@ -1,0 +1,19 @@
+orientation report
+
+q01: fix problem of dynamic 2D array with "new", and free memory
+q02: fix declare problem of line 36, and '/n' of the end of filename
+q03: fix wrong spelling in switch, and add {} for if(b == STUPID)
+q04: initialize i, j, num_of_factor, and fix find all factors
+q05: compute i+j first, and fix SWAP(x, y)
+q06: fix char -> int, cause the size of char is only 128
+     fix cmp function for the computation boundary
+     add tolerance for float computation
+q07: malloc size for dynamic array, and fix double free the same pointer.
+q08: add path and use extern
+q09: __attribute__((packed))
+q10:
+q11: link main.cpp and library
+     set LD_LIBRARY_PATH
+     result of lib1: x = -20170128, y = 18
+     result of lib2: x = 1, y = -20170128
+q12:

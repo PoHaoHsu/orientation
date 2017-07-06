@@ -5,7 +5,7 @@
 
 int *makeArray(int size)
 {
-	int array[size];
+	int *array = (int *)malloc(size);
 	for (int i = 0; i < size; i++){
 		array[i] = i;
 	}
@@ -34,6 +34,6 @@ int main()
 	printf("Both *array and *copy have the same data\n");
 
 	free(array);
-	free(copy);
+	//free(copy);
 	return 0;
 }
