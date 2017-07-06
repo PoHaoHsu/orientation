@@ -12,12 +12,15 @@ void printNumbers(int *array, int size)
 
 int cmp(const void *obj1, const void *obj2)
 {
-	return *(int *)obj1 - *(int *)obj2;
+	int a = *(int *)obj1, b = *(int *)obj2;
+	if(a > b) return 1;
+	else if(a < b) return -1;
+	else return 0;
 }
 
 int main()
 {
-	for(char letter =0; letter < 255; letter++){
+	for(int letter =0; letter < 255; letter++){
 		putchar(letter);
 		putchar(' ');
 	}
@@ -38,9 +41,10 @@ int main()
 	const int FACTOR = 343;
 	float x = 0;
 	for (int i =0; i < FACTOR; i++){
-		x += 13/FACTOR;
+		x += 13.0/FACTOR;
 	}
-	if (x == 13){
+	//printf("x = %f\n", x);
+	if (abs(x - 13) < 0.001){
 		printf("Correct, x == 13!\n");
 	}
 	else{
