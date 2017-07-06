@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <assert.h>
-#include "magic.h"
+#include "include/magic.h"
 
 int main()
 {
