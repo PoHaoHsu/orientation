@@ -7,10 +7,14 @@ int compare(const void *arg1, const void *arg2) {
 }
 
 int main(int argc, char* argv[]){
+	if(argc <= 1){
+		printf("Please enter a number\n");
+		return EXIT_FAILURE;
+	}
 
 	//get input
 	int n = atoi(argv[1]);
-
+	
 	//set variable
 	int i = 1, j = 0;
 	int num_of_factor = n / 2 + 1;
@@ -20,20 +24,16 @@ int main(int argc, char* argv[]){
 	result_arr = (int *)malloc(num_of_factor);
 
 	//find all factors
-	while(i * i < n){
+	while(i * i <= n){
 		if(n % i == 0){
 			//put the factor pair in the array
 			//for example : 12 = 2 x 6
 			//(2, 6) is the factor pair of 12
-			//printf("i = %d\n", i);
-			//printf("j = %d\n", j);
 			result_arr[j++] = i;
-			//printf("j = %d\n", j);
 			if(i*i != n)
 				result_arr[j++] = n / i;
 		}
 		i++;
-		//printf("i = %d\n", i);
 	}
 
 	//ascending sort
