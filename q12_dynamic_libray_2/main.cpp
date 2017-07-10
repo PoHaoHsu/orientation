@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <assert.h>
-#include "elsa.h"
+#include "include/elsa.h"
 
 int main()
 {

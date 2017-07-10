@@ -16,4 +16,6 @@ q11: link main.cpp and library
      set LD_LIBRARY_PATH
      result of lib1: x = -20170128, y = 18
      result of lib2: x = 1, y = -20170128
-q12:
+q12:Create a cpp file to implement squre and plus, and then creat shared library
+    x = 12, y = 12
+    a = 90, b = 90
